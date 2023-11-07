@@ -3,7 +3,15 @@ import pandas as pd
 from PIL import Image
 import hashlib
 import pickle
-pip install scikit-learn
+from sklearn.feature_selection import VarianceThreshold
+from sklearn.feature_selection import SelectKBest
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import SVC
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
 
 df = pd.read_csv("kdd.csv")
 pipe = pickle.load(open("pipe.pkl", "rb"))
