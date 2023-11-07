@@ -3,6 +3,7 @@ import pandas as pd
 from PIL import Image
 import hashlib
 import pickle
+pip install scikit-learn
 
 df = pd.read_csv("kdd.csv")
 pipe = pickle.load(open("pipe.pkl", "rb"))
